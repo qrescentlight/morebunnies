@@ -11,44 +11,59 @@
 
 <body>
     <section id="secOne">
-        <h2>Get to know the owners</h2>
+        <h2>///Get to know the owners.</h2>
         <p id="demo">Who do you want to get to know?</p>
         <button onclick="getText(file, 0)">Jack</button>
         <button onclick="getText(file, 1)">Jill</button>
 
-        <h3>Get to know the pets.</h3>
+        <h3>////Get to know the pets.</h3>
     </section>
 
     <section id="secTwo">
-        <h2>Get to know the pets.</h2>
+        <h2>////Get to know the pets.</h2>
         bunnies
-        <h3>Get to know the Owner.</h3>
+        <h3>////Get to know the Owner.</h3>
     </section>
 
     <script>
 
         let h3h3 = document.querySelectorAll("h3");
+        let h2h2 = document.querySelectorAll("h2");
 
         window.onload = h3h3[1].onclick = function () {
             document.getElementById("secOne").style.display = "block";
             document.getElementById("secTwo").style.display = "none";
             document.documentElement.style.backgroundColor = "wheat";
+            
+        getTitle(title, 0);
         }
 
-        h3h3[0].onclick =  function () {
+        h3h3[0].onclick = function () {
             document.getElementById("secOne").style.display = "none";
             document.getElementById("secTwo").style.display = "block";
             document.documentElement.style.backgroundColor = "lightgrey";
+            
+        getTitle(title, 1);
         }
 
 
-            file = "api.json";
+        file = "api.json";
 
         async function getText(file, i) {
             let myObject = await fetch(file);
             let myText = await myObject.json();
             document.getElementById("demo").innerHTML = myText[i].name + " is more than " + myText[i].age + " years old. " + myText[i].adj + " has a pet " + myText[i].pet[i] + "."
         }
+
+        title = "title.json";
+
+        async function getTitle(title, i) {
+            let myObj = await fetch(title);
+            let myTitl = await myObj.json();
+            h3h3[i].innerHTML = myTitl[i+1];
+            h2h2[i].innerHTML = myTitl[i];
+        }
+
     </script>
 </body>
 
