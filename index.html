@@ -18,7 +18,9 @@
         async function getText(file) {
             let myObject = await fetch(file);
             let myText = await myObject.json();
-            document.getElementById("demo").innerHTML = myText.name + " is more than " + myText.age + " years old. He has a pet " + myText.pet + ".";
+            document.getElementById("demo").innerHTML = myText[0].name + " is more than " + myText[0].age + " years old. He has a pet " + myText[0].pet[1] + "."
+            + "<br> <br>" +
+            myText[1].name + " is more than " + myText[1].age + " years old. He has a pet " + myText[1].pet + ".";
         }
     </script>
 </body>

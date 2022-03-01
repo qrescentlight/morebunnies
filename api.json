@@ -1,6 +1,12 @@
-{
+[{
     "name": "Jack",
     "age": 30,
     "car": null,
-    "pet": "rabbit"
-}
+    "pet": ["rabbit", "cat"]
+},
+{
+    "name": "Jill",
+    "age": 50,
+    "car": null,
+    "pet": "dog"
+}]
