@@ -1,6 +1,6 @@
-
-          {
-                "name": "Bunny",
-                "furColor": "black",
-                "species": "Dutch dwarf"
-            }
+{
+    "name": "Jack",
+    "age": 30,
+    "car": null,
+    "pet": "rabbit"
+}
