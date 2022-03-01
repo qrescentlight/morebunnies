@@ -6,21 +6,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>bunnies</title>
+
 </head>
 
 <body>
-    <h2>Creating an Object Parsing JSON</h2>
-    <p id="demo"></p>
+    <section id="secOne">
+        <h2>Get to know the owners</h2>
+        <p id="demo">Who do you want to get to know?</p>
+        <button onclick="getText(file, 0)">Jack</button>
+        <button onclick="getText(file, 1)">Jill</button>
+
+        <h3>Get to know the pets.</h3>
+    </section>
+
+    <section id="secTwo">
+        <h2>Get to know the pets.</h2>
+        bunnies
+        <h3>Get to know the Owner.</h3>
+    </section>
 
     <script>
-        getText("api.json");
 
-        async function getText(file) {
+        let h3h3 = document.querySelectorAll("h3");
+
+        window.onload = h3h3[1].onclick = function () {
+            document.getElementById("secOne").style.display = "block";
+            document.getElementById("secTwo").style.display = "none";
+            document.documentElement.style.backgroundColor = "wheat";
+        }
+
+        h3h3[0].onclick =  function () {
+            document.getElementById("secOne").style.display = "none";
+            document.getElementById("secTwo").style.display = "block";
+            document.documentElement.style.backgroundColor = "lightgrey";
+        }
+
+
+            file = "api.json";
+
+        async function getText(file, i) {
             let myObject = await fetch(file);
             let myText = await myObject.json();
-            document.getElementById("demo").innerHTML = myText[0].name + " is more than " + myText[0].age + " years old. He has a pet " + myText[0].pet[1] + "."
-            + "<br> <br>" +
-            myText[1].name + " is more than " + myText[1].age + " years old. He has a pet " + myText[1].pet + ".";
+            document.getElementById("demo").innerHTML = myText[i].name + " is more than " + myText[i].age + " years old. " + myText[i].adj + " has a pet " + myText[i].pet[i] + "."
         }
     </script>
 </body>
