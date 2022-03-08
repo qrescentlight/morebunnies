@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +9,7 @@
     <!-- <link rel="import" href="import.html"> -->
     <script src="import.js"></script>
 </head>
+
 <body>
     <one-dialog></one-dialog>
 
@@ -18,5 +20,14 @@
     }
 
     customElements.define('one-dialog', OneDialog);</script> -->
+
+    <script>
+        title = "title.json";
+
+        async function getTitle(title) {
+            let myObj = await fetch(title);
+            let myTitl = await myObj.json();
+        }</script>
 </body>
+
 </html>

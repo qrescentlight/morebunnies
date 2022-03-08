@@ -1,7 +1,11 @@
-class OneDialog extends HTMLElement {
-            connectedCallback() {
-                this.innerHTML = `<h1>Hello, World!</h1>`;
-            }
-        }
 
-        customElements.define('one-dialog', OneDialog);
+class OneDialog extends HTMLElement {
+    connectedCallback() {
+
+        this.innerHTML = myTitl[0];
+
+    }
+}
+
+customElements.define('one-dialog', OneDialog);
+
