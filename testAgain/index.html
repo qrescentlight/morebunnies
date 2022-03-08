@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="template.js"></script>
+    <script src="custom.js"></script>
+    <!-- <script src="html.js"></script> -->
+    <!-- <style>
+        one-dialog {
+            background-color: green;
+        }
+
+        .one-dialog {
+            background-color: aqua;
+        }
+    </style> -->
+    <!-- <link rel="import" href="/testAgain/template.html"> -->
+    <!-- <style>
+    #my-paragraph{
+        height: 200px;
+    }
+</style> -->
+
+</head>
+
+<body>
+    <!-- 
+    <template id="my-paragraph">
+        <style>
+            p {
+                color: white;
+                background-color: #666;
+                padding: 5px;
+            }
+        </style>
+        <p>My paragraph</p>
+    </template> -->
+    <div id="demo"></div>
+
+    <my-paragraph>ccwwmjmfopih</my-paragraph>
+    <my-paragraph>helleke</my-paragraph>
+    <one-dialog></one-dialog>
+
+    <!-- 
+
+    <div>800</div>
+    <div>
+        <one-dialog id="one" style="background-color: red">gg</one-dialog>
+
+        <one-dialog id="two">ee</one-dialog>
+    </div> -->
+    <!-- <script>
+
+        // customElements.define('my-paragraph',
+        //     class extends HTMLElement {
+        //         constructor() {
+        //             super();
+        //             let template = document.getElementById('my-paragraph');
+        //             let templateContent = template.content;
+
+        //             const shadowRoot = this.attachShadow({ mode: 'open' });
+        //             shadowRoot.appendChild(templateContent.cloneNode(true));
+        //         }
+        //     }
+        // );
+
+        getText("template.txt");
+
+        async function getText(file) {
+            let myObject = await fetch(file);
+            let myText = await myObject.text();
+            document.getElementById("demo").innerHTML = myText;
+        }
+
+        function loadDoc() {
+            const xhttp = new XMLHttpRequest();
+            xhttp.onload = function () {
+                document.getElementById("demo").innerHTML = this.responseText;
+            }
+            xhttp.open("GET", "template.txt");
+            xhttp.send();
+        }
+
+    </script> -->
+
+</body>
+
+</html>
