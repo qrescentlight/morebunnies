@@ -9,10 +9,10 @@
     <script src="custom.js"></script>
     <style>
         one-dialog {
-background-color: green;
+            background-color: green;
         }
 
-        .one-dialog{
+        .one-dialog {
             background-color: aqua;
         }
     </style>
@@ -21,15 +21,18 @@ background-color: green;
 
 <body>
 
+    <template id="my-paragraph">
+        <p>My paragraph</p>
+    </template>
 
+<!-- 
 
-    
     <div>800</div>
     <div>
         <one-dialog id="one" style="background-color: red">gg</one-dialog>
 
         <one-dialog id="two">ee</one-dialog>
-    </div>
+    </div> -->
     <script>
 
         // let dia = document.querySelectorAll("div");
@@ -37,12 +40,15 @@ background-color: green;
         //     dia[i].style.backgroundColor = "blue";
         // }
 
-        let one = document.getElementById("one");
-        let two = document.getElementById("two");
+        // let one = document.getElementById("one");
+        // let two = document.getElementById("two");
 
-        one.style.backgroundColor = "red";
+        // one.style.backgroundColor = "red";
 
-        document.getElementsByClassName("one-dialog")[1].style.backgroundColor = "yellow";
+        // document.getElementsByClassName("one-dialog")[1].style.backgroundColor = "yellow";
+        let template = document.getElementById('my-paragraph');
+        let templateContent = template.content;
+        document.body.appendChild(templateContent);
 
     </script>
 
