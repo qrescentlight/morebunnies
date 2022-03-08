@@ -28,7 +28,7 @@
 </head>
 
 <body>
-    <!-- 
+    
     <template id="my-paragraph">
         <style>
             p {
@@ -37,13 +37,14 @@
                 padding: 5px;
             }
         </style>
-        <p>My paragraph</p>
-    </template> -->
-    <div id="demo"></div>
+        <p><slot name="para">My paragraph</slot>
+            <slot name="twoo">My twooeje</slot></p>
+    </template>
+    <!-- <div id="demo"></div> -->
 
-    <my-paragraph>ccwwmjmfopih</my-paragraph>
-    <my-paragraph>helleke</my-paragraph>
-    <one-dialog></one-dialog>
+    <my-paragraph><span slot="para"></span></my-paragraph>
+    <my-paragraph><span slot="twoo"></span></my-paragraph>
+    <!-- <one-dialog></one-dialog> -->
 
     <!-- 
 
@@ -86,6 +87,8 @@
         }
 
     </script> -->
+
+    
 
 </body>
 
