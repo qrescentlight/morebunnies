@@ -25,8 +25,8 @@
         <h3>////Get to know the Owner.</h3>
     </section>
 
-    <button style="position: fixed";> <a href="http://127.0.0.1:5500/test.html">test</a>
-        </button>
+    <button style="position: fixed" ;> <a href="http://127.0.0.1:5500/test.html">test</a>
+    </button>
 
     <script>
 
@@ -37,21 +37,22 @@
             document.getElementById("secOne").style.display = "block";
             document.getElementById("secTwo").style.display = "none";
             document.documentElement.style.backgroundColor = "wheat";
-            
-        getTitle(title, 0);
+
+            getTitle(title, 0);
         }
 
         h3h3[0].onclick = function () {
             document.getElementById("secOne").style.display = "none";
             document.getElementById("secTwo").style.display = "block";
             document.documentElement.style.backgroundColor = "lightgrey";
-            
-        getTitle(title, 1);
+
+            getTitle(title, 1);
         }
 
 
         // file = "api.json";
-file = url("http://127.0.0.1:5500/test.html");
+        // file = url("http://127.0.0.1:5500/api.json");
+        file = test.html;
 
         async function getText(file, i) {
             let myObject = await fetch(file);
@@ -64,7 +65,7 @@ file = url("http://127.0.0.1:5500/test.html");
         async function getTitle(title, i) {
             let myObj = await fetch(title);
             let myTitl = await myObj.json();
-            h3h3[i].innerHTML = myTitl[i+1];
+            h3h3[i].innerHTML = myTitl[i + 1];
             h2h2[i].innerHTML = myTitl[i];
         }
 
