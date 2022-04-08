@@ -1,14 +1,7 @@
-[{
+{
     "name": "Jack",
     "age": 30,
     "car": null,
     "adj": "He",
     "pet": ["rabbit", "cat"]
-},
-{
-    "name": "Jill",
-    "age": 50,
-    "car": null,
-    "adj": "She",
-    "pet": ["bunny", "dog"]
-}]
+}

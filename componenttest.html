@@ -10,10 +10,21 @@
 </head>
 
 <body>
-    <say-hi name="Eric"></say-hi>
-    <shadow-element>
-        <div>( I'm in the light dom )</div>
-    </shadow-element>
+    <script>
+        let file = "api.json";
+        fetch(file)
+            .then(x => x.json)
+            .then(y => mySun(y))
+
+        function mySun(y) {
+            let result = y.find(({ name }) => y.name === 'Jack');
+
+            console.log(result) // { name: 'cherries', quantity: 5 }
+        }
+
+        
+
+    </script>
 </body>
 
 </html>
