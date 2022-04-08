@@ -1,0 +1,66 @@
+{
+   "hbih": {
+      "name": "Het Bos in Huis",
+      "desc": [
+         "Het Bos in Huis is een mobilegame om kinderen meer te leren over de dieren in het bos en naar buiten te krijgen.",
+         "Dit is mijn proces voor het bos in huis",
+         "dit is mijn aandeel voor het bos in huis",
+         "dit is mijn reflectie voor het bos in huis"
+      ],
+      "link": "https://lennart.xyz/bosinhuis/",
+      "images": [
+         "bosinhuis_2.gif",
+         "Screenshot_20210705-140851.png",
+         "bever.png",
+         "Screenshot_2021-07-05_130901.png"
+      ]
+   },
+   "per": {
+      "name": "Hoe maak ik keuzes?",
+      "desc": [
+         "Een customer journey voor een fictieve journaling app om mensen te helpen om keuzes te kunnen maken.",
+         "Dit is mijn proces voor persuasion",
+         "dit is mijn aandeel voor persuasion",
+         "dit is mijn reflectie voor persuasion"
+      ],
+      "thumb": "customerjourney.gif",
+      "link": null,
+      "images": null
+   },
+   "sto": {
+      "name": "Emotionele Mishandeling VR",
+      "desc": [
+         "Een VR-applicatie om mensen te leren hoe het is om emotionele mishandeling te ervaren en om hulpverleners te leren hoe je overlevers van emotionele mishandeling kunt herkennen.",
+         "Dit is mijn proces voor storytelling",
+         "dit is mijn aandeel voor storytelling",
+         "dit is mijn reflectie voor storytelling"
+      ],
+      "thumb": null,
+      "link": null,
+      "images": null
+   },
+   "nad": {
+      "name": "From Song to Story",
+      "desc": [
+         "From Song to Story is een interactief concept om een verhaal te maken aan de hand van de Heldenreis door muziek te spelen op een fysieke pianomat.",
+         "Dit is mijn proces voor nad",
+         "dit is mijn aandeel voor nad",
+         "dit is mijn reflectie voor nad"
+      ],
+      "thumb": "hero.gif",
+      "link": null,
+      "images": null
+   },
+   "keu": {
+      "name": "Portfolio",
+      "desc": [
+         "Deze portfoliowebsite is een Single Page Application met een eigengemaakte API en Framework.",
+         "Dit is mijn proces voor mijn portfolio",
+         "dit is mijn aandeel voor mijn portfolio",
+         "dit is mijn reflectie voor mijn portfolio"
+      ],
+      "thumb": "portfoliothumb.gif",
+      "link": null,
+      "images": null
+   }
+}
