@@ -62,17 +62,5 @@
       "thumb": "portfoliothumb.gif",
       "link": null,
       "images": null
-   },
-   "fed": {
-      "name": "Portfolio",
-      "desc": [
-         "Deze portfoliowebsite is een Single Page Application met een eigengemaakte API en Framework.",
-         "Dit is mijn proces voor mijn portfolio",
-         "dit is mijn aandeel voor mijn portfolio",
-         "dit is mijn reflectie voor mijn portfolio"
-      ],
-      "thumb": "portfoliothumb.gif",
-      "link": null,
-      "images": null
    }
 }
